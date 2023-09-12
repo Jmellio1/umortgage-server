@@ -2,7 +2,7 @@
 ## Setup info
 
 This is the sever side that connect to mongodb with API calls.  The default port is 3306.
-In order to run there needs to be an environment file (.env) that contains the connection string that’s not included. 
+In order to run there needs to be an environment file (.env) in the root directory that contains the connection string that’s not included. 
 the format is normally  
 ATLAS_URI=mongodb+srv://{change_user}:{ChangePassword}@cluster0.8vxj2.mongodb.net/?retryWrites=true&w=majority
 
