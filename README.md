@@ -5,6 +5,7 @@ This is the sever side that connect to mongodb with API calls.  The default port
 In order to run there needs to be an environment file (.env) that contains the connection string that’s not included. 
 the format is normally  
 ATLAS_URI=mongodb+srv://{change_user}:{ChangePassword}@cluster0.8vxj2.mongodb.net/?retryWrites=true&w=majority
+
 Or whatever mongodb gives you but the ATLAS_URI= is required.
 Within conn.mjs we are looking for a db named umortgage and the collection is also named umortgage this needs to be setup or changed in conn.mjs and routes 
 
