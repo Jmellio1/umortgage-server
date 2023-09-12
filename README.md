@@ -1,7 +1,13 @@
 
 ## Setup info
 
-This is the client side that depends on the sever being ran on localhost:3306. If the sever isn’t running on port 3306 this needs to be changed in ./components js files
+This is the sever side that connect to mongodb with API calls.  The default port is 3306.
+In order to run there needs to be an environment file (.env) that contains the connection string that’s not included. 
+the format is normally  
+ATLAS_URI=mongodb+srv://{change_user}:{ChangePassword}@cluster0.8vxj2.mongodb.net/?retryWrites=true&w=majority
+Or whatever mongodb gives you but the ATLAS_URI= is required.
+Within conn.mjs we are looking for a db named umortgage and the collection is also named umortgage this needs to be setup or changed in conn.mjs and routes 
+
 
 ## Available Scripts
 
@@ -14,7 +20,7 @@ There are some packages I used / refinanced to neaten up the UI some didn’t fu
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3306](http://localhost:3306) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
